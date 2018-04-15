@@ -2,9 +2,9 @@ require "pry"
 class Hash
   def keys_of(*arguements)
     array = []
-    self.each do |place, animal|
+    self.each do |animal, place|
       binding.pry
-      if arguements.include?(place)
+      arguements.include?(place)
         array << animal
       end
     end
