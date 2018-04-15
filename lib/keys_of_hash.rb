@@ -4,7 +4,7 @@ class Hash
     array = []
     self.each do |animal, place|
       binding.pry
-      arguements.include?(place)
+      if arguements.include?(place)
         array << animal
       end
     end
