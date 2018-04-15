@@ -1,8 +1,9 @@
 class Hash
-  def keys_of(arguments)
+  def keys_of(*arguements)
     array = []
-    hash.each do |place, animal|
-      if arguments.include?(place)
+    arguements.each do |place, animal|
+      binding.pry
+      if arguements.include?(place)
         array << animal
       end
     end
